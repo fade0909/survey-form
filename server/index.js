@@ -13,6 +13,7 @@ app.use(express.json());
 
 // ROUTE HERE
 app.use('/api', surveyRouter);
+
 // CONNECTION TO MONGO DB 
 mongoose.connect('mongodb://localhost:27017/surveyform')
 

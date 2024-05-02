@@ -6,6 +6,7 @@ import { Button, Card, Flex, Form, Typography, notification } from "antd";
 const SurveyForm = () => {
   const [answers, setAnswers] = useState(formQuestion);
 
+  // Create function for button to highlist if select and deselect to cancel
   const handleOptionClick = (questionKey, value) => {
     // Check if the clicked option is already selected
     if (answers[questionKey] === value) {
@@ -17,6 +18,7 @@ const SurveyForm = () => {
     }
   };
 
+  // This function handle the submit of all data to the backend and also with validation if the question is not answered properly
   const handleSubmit = async () => {
     const isAnswerEmpty = Object.values(answers).some(
       (answer) => answer === ""

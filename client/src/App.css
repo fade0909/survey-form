@@ -22,6 +22,8 @@ body {
 
 .btn {
   width: 100%;
+  background-color: #007fff;
+  color: #fff;
 }
 
 .btn-container {
@@ -37,4 +39,5 @@ body {
   border-radius: 10px;  */
   cursor: pointer;
   background-color: #007fff;
+  color: #fff;
 }
